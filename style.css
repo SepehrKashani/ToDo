@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: "Rubik", sans-serif;
+  background-image: url(./image/blobs.png);
+  background-size: 340px 440px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.main {
+  width: 1000px;
+  height: 100vh;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.header {
+  margin: 0 auto 0 0;
+}
+.header img {
+  height: 80px;
+  width: 120px;
+}
+.container {
+  background-color: #fafafa;
+  width: 630px;
+  border: 1px solid #073b4c;
+  display: flex;
+  flex-direction: column;
+  padding: 64px;
+}
+
+.container-A {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconImage {
+  background-image: url(./image/Todo-Icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 70px;
+  height: 75px;
+}

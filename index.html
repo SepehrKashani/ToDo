@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <img src="./image/logo.png" alt="Logo" />
+      </div>
+      <div class="container">
+        <!-- the first container that holds icon and the date-->
+        <div class="container-A">
+          <div class="iconImage"></div>
+          <div class="datecontainer">
+            <h1 id="heading-date">7 Nov 2020</h1>
+            <p id="subheading-day">Saturday</p>
+          </div>
+        </div>
+        <!-- the second container that holds input and the list-->
+        <div class="container-B">
+          <div>
+            <input
+              class="todoInput"
+              type="text"
+              placeholder="Write your task"
+            />
+          </div>
+          <div class="listItems"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
