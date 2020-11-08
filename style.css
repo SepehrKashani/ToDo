@@ -40,6 +40,7 @@ body {
   height: auto;
   border: 1px solid #073b4c;
   display: flex;
+  border-radius: 5px;
   flex-direction: column;
   padding: 64px;
 }
