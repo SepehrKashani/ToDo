@@ -5,19 +5,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  background: url(./image/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
-  background: white;
   font-family: "Rubik", sans-serif;
   color: #333;
-  background-image: url(./image/background.jpg);
-  /* background-size: 340px 440px; */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .main {
   /* width: 1000px;
@@ -39,9 +36,8 @@ body {
 }
 .container {
   background-color: white;
-  /* width: 630px; */
-  width: 60%;
-  height: 100%;
+  width: 630px;
+  height: auto;
   border: 1px solid #073b4c;
   display: flex;
   flex-direction: column;
