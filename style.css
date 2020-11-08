@@ -16,7 +16,9 @@ body {
   background-position: top right;
 }
 .main {
-  width: 1000px;
+  /* width: 1000px;
+   */
+  width: 70%;
   /* height: 100vh; */
   margin: 32px auto;
   display: flex;
@@ -33,7 +35,8 @@ body {
 }
 .container {
   background-color: white;
-  width: 630px;
+  /* width: 630px; */
+  width: 60%;
   border: 1px solid #073b4c;
   display: flex;
   flex-direction: column;
