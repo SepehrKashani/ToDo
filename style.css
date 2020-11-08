@@ -17,7 +17,7 @@ body {
 }
 .main {
   width: 1000px;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 32px auto;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@ body {
   width: 120px;
 }
 .container {
-  background-color: #fafafa;
+  background-color: white;
   width: 630px;
   border: 1px solid #073b4c;
   display: flex;
@@ -55,9 +55,10 @@ body {
 }
 
 .iconImage {
-  background-image: url(./image/Todo-Icon.png);
+  background-image: url(./image/Todo-Icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  transform: rotate(-15deg) scale(1.1);
   width: 70px;
   height: 75px;
 }
@@ -79,16 +80,14 @@ body {
   border-top: none;
 }
 
-/* .listItems ul {
-  list-style: square inside;
-  list-style-image: url(./image/undone.png);
-} */
 li {
   list-style: none inside;
-  
+
   cursor: pointer;
   font-size: 14px;
   margin-top: 16px;
+  transition: all 0.4s ease-out;
+  opacity: 1;
 }
 
 .done {
@@ -96,8 +95,8 @@ li {
   margin-top: 16px;
   text-decoration: line-through;
   font-style: italic;
-  color:#BDBDBD;
-  ;
+
+  color: #bdbdbd;
 }
 
 li::before {
@@ -110,11 +109,6 @@ li::before {
   background-repeat: no-repeat;
   margin-right: 5px;
 }
-/* .done {
-  list-style: none;
-  cursor: pointer;
-  margin-top: 16px;
-} */
 
 .done::before {
   content: "";
@@ -126,5 +120,35 @@ li::before {
   background-repeat: no-repeat;
   margin-right: 5px;
   text-decoration: line-through;
-  columns: red;
-} */ */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  body {
+    background-image: none;
+  }
+  .main {
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+    margin-top: 64px;
+    padding: 10px;
+  }
+  .header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .header img {
+    width: 80%;
+    height: 120px;
+  }
+  #heading-date {
+    font-size: 18px;
+  }
+  #subheading-day {
+    font-size: 14px;
+  }
+}
