@@ -76,3 +76,6 @@ const handleList = function (e) {
 
 inpt.addEventListener('keypress', handleEvent);
 ulList.addEventListener('click', handleList);
+window.onload = () => {
+  inpt.focus();
+};
