@@ -9,6 +9,7 @@
 body {
   background: white;
   font-family: "Rubik", sans-serif;
+  color: #333;
   background-image: url(./image/blobs.png);
   background-size: 340px 440px;
   background-repeat: no-repeat;
@@ -42,6 +43,15 @@ body {
 .container-A {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.datecontainer {
+  text-align: right;
+}
+#heading-date {
+  margin-bottom: 8px;
 }
 
 .iconImage {
@@ -51,3 +61,70 @@ body {
   width: 70px;
   height: 75px;
 }
+.container-B {
+  display: flex;
+  flex-direction: column;
+}
+.todoInput {
+  width: 100%;
+  border: 1.5px solid #073b4c;
+  border-radius: 5px;
+  padding: 10px 16px;
+  font-style: italic;
+}
+.hrLine {
+  margin: 32px 0 16px 0;
+
+  border: 1px solid #06d6a0;
+  border-top: none;
+}
+
+/* .listItems ul {
+  list-style: square inside;
+  list-style-image: url(./image/undone.png);
+} */
+li {
+  list-style: none inside;
+  
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.done {
+  list-style: none inside;
+  margin-top: 16px;
+  text-decoration: line-through;
+  font-style: italic;
+  color:#BDBDBD;
+  ;
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-size: 10px;
+  background-image: url("./image/undone.png");
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+/* .done {
+  list-style: none;
+  cursor: pointer;
+  margin-top: 16px;
+} */
+
+.done::before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-size: 10px;
+  background-image: url("./image/done.png");
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  text-decoration: line-through;
+  columns: red;
+} */ */
