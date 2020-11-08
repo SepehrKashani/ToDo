@@ -10,16 +10,20 @@ body {
   background: white;
   font-family: "Rubik", sans-serif;
   color: #333;
-  background-image: url(./image/blobs.png);
-  background-size: 340px 440px;
+  background-image: url(./image/background.jpg);
+  /* background-size: 340px 440px; */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-size: cover;
 }
 .main {
   /* width: 1000px;
    */
   width: 70%;
-  /* height: 100vh; */
+  height: 100%;
   margin: 32px auto;
   display: flex;
   flex-direction: column;
@@ -37,6 +41,7 @@ body {
   background-color: white;
   /* width: 630px; */
   width: 60%;
+  height: 100%;
   border: 1px solid #073b4c;
   display: flex;
   flex-direction: column;
@@ -125,10 +130,20 @@ li::before {
   margin-right: 5px;
   text-decoration: line-through;
 }
+.clearList {
+  width: auto;
+  background: transparent;
+  border: none;
+  margin-left: auto;
+  padding: 16px 0px;
+  text-decoration: underline;
+  text-decoration-color: #073b4c;
+  cursor: pointer;
+}
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   body {
-    background-image: none;
+    height: 100%;
   }
   .main {
     width: 100%;

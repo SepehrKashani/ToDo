@@ -3,6 +3,7 @@ const inpt = document.querySelector('.todoInput');
 const ulList = document.querySelector('.listItems');
 const date = document.querySelector('#heading-date');
 const day = document.querySelector('#subheading-day');
+const clear = document.querySelector('.clearList');
 
 (function () {
   const days = [
@@ -79,3 +80,6 @@ ulList.addEventListener('click', handleList);
 window.onload = () => {
   inpt.focus();
 };
+clear.addEventListener('click', () => {
+  ulList.innerHTML = '';
+});
